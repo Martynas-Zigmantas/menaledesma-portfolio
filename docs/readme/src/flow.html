@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;width:1600px;height:460px;background:#eeede9;font-family:'Bricolage Grotesque',Arial,sans-serif;color:#222;
+background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(167,197,247,.55),transparent)}
+h1{margin:0;padding:56px 0 8px;text-align:center;font-weight:400;font-size:64px;letter-spacing:-.04em;text-transform:uppercase}
+p.sub{margin:0;text-align:center;font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:#6d6d6a}
+.row{display:flex;align-items:center;justify-content:center;gap:0;margin-top:64px}
+.box{width:260px;height:170px;border-radius:28px;background:#222;color:#eeede9;display:flex;flex-direction:column;justify-content:center;padding:0 26px;box-sizing:border-box}
+.box.blue{background:#a7c5f7;color:#222}
+.box small{font-size:14px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.box b{font-size:30px;font-weight:800;line-height:1.15;margin:6px 0}
+.box span{font-size:16px;opacity:.85}
+.arr{width:110px;text-align:center;font-size:15px;color:#4a73c2;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.arr i{display:block;font-style:normal;font-size:40px;line-height:1}
+</style></head><body>
+<h1>How a change goes live</h1>
+<p class="sub">push once · everything after is automatic</p>
+<div class="row">
+ <div class="box"><small>1 · source</small><b>Forgejo</b><span>git.jack-sally.com<br>Martynas-Cloud</span></div>
+ <div class="arr"><i>→</i>push mirror</div>
+ <div class="box"><small>2 · mirror</small><b>GitHub</b><span>private copy,<br>synced on every push</span></div>
+ <div class="arr"><i>→</i>git hook</div>
+ <div class="box"><small>3 · deploy</small><b>Cloudflare Pages</b><span>no build step,<br>serves repo root</span></div>
+ <div class="arr"><i>→</i>custom domain</div>
+ <div class="box blue"><small>4 · live</small><b>Portfolio</b><span>client's domain<br>+ *.pages.dev</span></div>
+</div></body></html>

@@ -1,0 +1,11 @@
+PORTFOLIO - María José Mena Ledesma
+
+Estructura:
+  index.html        página principal
+  css/style.css     estilos
+  js/main.js        textos ES/EN, proyectos y carruseles
+  assets/img/       imágenes, logos e íconos
+
+Para publicar: subí el CONTENIDO de esta carpeta (index.html, css, js y assets)
+a la raíz de tu hosting o dominio, respetando las carpetas.
+Las tipografías (Bricolage Grotesque) se cargan desde Google Fonts, por lo que se necesita conexión a internet.
