@@ -10,6 +10,7 @@ Static one-page portfolio (ES/EN). Plain HTML/CSS/JS, no build step.
 | `css/style.css` | styles (light + dark) |
 | `js/main.js` | ES/EN texts, projects, carousels |
 | `assets/img/` | photos, logos, icons |
+| `LEEME.txt` | the same layout notes in Spanish, for whoever hosts it by hand |
 
 Fonts (Bricolage Grotesque) load from Google Fonts.
 
@@ -25,4 +26,4 @@ Never commit to the GitHub copy directly; the mirror overwrites it.
 
 Local preview: `python3 -m http.server 8000` in the repo root.
 
-README art: `docs/readme/src/` (re-render with `node docs/readme/src/render.cjs` from the repo root).
+README art: `docs/readme/src/` (re-render from the repo root with `NODE_PATH=~/koda/node_modules node docs/readme/src/render.cjs`; Playwright must resolve).
